@@ -4,6 +4,9 @@ RenoApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'static_pages#index'
+  
+  get '/' => 'static_pages#index'
+  get 'compromiso' => 'static_pages#compromiso'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
