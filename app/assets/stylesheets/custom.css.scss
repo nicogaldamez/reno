@@ -1,0 +1,97 @@
+@import "bootstrap";
+
+body {
+  background: url('https://farm8.staticflickr.com/7195/6946914191_fbcbbaada3_h.jpg') 0% 0 no-repeat fixed;
+  margin: 0 auto;
+}
+
+/*----HEADER----*/
+header {
+  background: #f8f8f8;
+  box-sizing: border-box;
+  padding-left: 7%;
+  padding-right: 7%;
+  font-family: Helvetica, Arial, sans-serif;
+  min-height: 90px;
+  width: auto;
+  margin: auto;
+  
+  #logo {
+    margin-left: 13.75%;
+    margin-right: 16%;
+    
+    img {
+      height: 55px;
+    }
+  }
+  
+  .navbar {
+    border: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .navbar-nav {
+    padding-top: 20px;
+  }
+  
+  .navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #252422;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background: #f8f8f8;
+    color: #eb5e28;
+  }
+  
+}
+
+/* ---- FOOTER ---- */
+footer .contenido {
+  width: 80%;
+  margin: auto;
+  
+  h3 {
+    margin-top: 0px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  strong {
+    color: #767676;
+    float: left;
+    font-weight: 600;
+    margin: 0 5px 5px 0;
+  }
+  
+  i {
+    color: #777777;
+    float: left;
+    margin: 4px 0 0;
+  }
+  
+  .contacto {
+    p {
+      line-height: 24px;
+      margin-left: 20px;
+      margin-top: -2px;
+    }  
+  }
+}
+.footer-top {
+  background: #252C34;
+  border-bottom: 1px solid #414f5a;
+  color: #A1A1A1;
+  padding: 50px 0;
+}
+
+.footer-bottom{ 
+  background: #272727;
+  color: #888;
+  line-height: 30px;
+  padding: 15px;
+}

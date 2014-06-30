@@ -1,0 +1,177 @@
+/*----INICIO----*/
+#inicio {
+  .section {
+    height: 750px;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: -20px;
+    
+    &:first-child {
+      margin-top: 0px
+    }
+  }
+  
+  h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    padding: 25px;
+  }
+  
+  h3.costado {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  
+  p.subheader {
+    width: auto;
+    margin-bottom: 70px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 24px;
+  }
+  
+  .titulo {
+    margin-top: 100px;
+    text-rendering: optimizeLegibility;
+    font-family: 'Helvetica Neue';
+    
+    li {
+      list-style: none;
+      color: #FFF;
+      font-weight: 300;
+      font-size: 20px;
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+    
+    .btn {
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      color: #FFF;
+      background: #2eaef0;
+      border: 0px;
+      margin-top: 20px;
+    }
+  }
+  
+  /*--- INTRODUCCION ---*/
+  .introduccion {
+    background: url("./intro.jpg") no-repeat center center;
+    background-size: auto 960px;
+    
+    .contenido {
+      overflow: visible;
+      position: relative;
+      height: 100%;
+      margin: 0 auto;
+    }
+    
+    h2 {
+      font-size: 65px;
+      text-transform: uppercase;
+      font-weight: bold;
+      background: rgba(25, 25, 25, .3);
+      color: #FFF;
+      display: inline-block;
+      padding: 10px;
+    }
+    
+    .pull-left {
+      width: 500px;
+      margin-left: 100px;
+    }
+  }
+  
+  /*--- QUIENES SOMOS ---*/
+  .quienes_somos {
+    background-color: #FFF;
+    width: 100%;
+    
+    .contenido {
+      overflow: visible;
+      position: relative;
+      height: 100%;
+      margin: 0 auto;
+      
+      p {
+        width: 80%;
+      }
+      
+      h5 {
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  /*--- PEFIL EMPRESARIAL ---*/
+  .perfil_empresarial {
+    height: 475px;
+    color: #FFF;
+    background: rgba(25, 25, 25, .8);
+    width: 100%;
+    
+    .contenido {
+      overflow: visible;
+      position: relative;
+      height: 100%;
+      margin: 0 auto;
+      
+      p {
+        width: 80%;
+        font-size: 1.3em;
+        margin-bottom: 25px;
+      }
+      
+      h5 {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  
+  /*--- FILOSOFIA ---*/
+  .filosofia {
+    background-color: #FFF;
+    width: 100%;
+    
+    .contenido {
+      overflow: visible;
+      position: relative;
+      height: 100%;
+      margin: 0 auto;
+      
+      p {
+        width: 80%;
+      }
+      
+      h5 {
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  /*--- PRESENCIA INTERNACIONAL ---*/
+  .presencia_internacional {
+    height: 485px;
+    color: #FFF;
+    background: rgba(25, 25, 25, .5);
+    width: 100%;
+    
+    .contenido {
+      overflow: visible;
+      position: relative;
+      width: 80%;
+      margin: 0 auto;
+      
+      li {
+        list-style: none;
+        font-size: 1.2em;
+      }
+    }
+  }
+}
