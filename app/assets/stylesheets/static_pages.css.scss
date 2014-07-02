@@ -144,7 +144,7 @@
   .filosofia {
     background-color: #FFF;
     width: 100%;
-    height: 830px;
+    height: 675px;
     
     .contenido {
       overflow: visible;
@@ -186,8 +186,7 @@
 /* ---- COMPROMISO ---- */
 #compromiso {
  background: #F1F2F7;
- padding: 0px 0px 50px;
- margin-top: -20px; 
+ padding: 20px 0px 50px;
  
  h1 {
    color: #777;
@@ -212,10 +211,13 @@
      width: 90%;
      margin: auto;
      display: block;
+     margin-bottom: 15px;
    }
    
    p {
      font-size: 1.2em;
+     width: 90%;
+     margin: auto;
    }
  }
 }
