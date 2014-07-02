@@ -4,10 +4,11 @@ class StaticPagesController < ApplicationController
   end
   
   def compromiso    
+    render 'en_construccion'
   end
   
   def instalaciones 
-       
+    render 'en_construccion'   
   end
   
   def clientes    
