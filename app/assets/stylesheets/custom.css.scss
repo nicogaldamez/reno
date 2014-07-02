@@ -8,6 +8,24 @@ body {
   background: url('https://farm8.staticflickr.com/7195/6946914191_fbcbbaada3_h.jpg') 0% 0 no-repeat fixed;
 }
 
+.flecha {
+  display: block;
+  content: "";
+  margin-bottom: -7px;
+  margin-left: 45px;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+/*  margin-bottom: 10px;*/
+  border-top: 0;
+  z-index: 100;
+}
+
 /*----HEADER----*/
 header {
   background: #f8f8f8;

@@ -165,19 +165,48 @@
   
   /*--- PRESENCIA INTERNACIONAL ---*/
   .presencia_internacional {
-    height: 485px;
+    height: 735px;
     color: #FFF;
     background: rgba(25, 25, 25, .5);
     width: 100%;
+    
+    .texto {
+      background: #FFF;
+      color: #767676;
+      font-weight: 300;
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    h3 {
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
     
     .contenido {
       overflow: visible;
       position: relative;
       width: 80%;
       margin: 0 auto;
+      margin-bottom: 20px;
       
       p {
-        font-size: 1.5em;
+        font-size: 1.3em;
+      }
+      
+      .cliente {
+        text-align: center;
+        img {
+          border-radius: 100px;
+        }
+        
+        p {
+          text-align: center;
+          width: 100%;
+          font-size: 1em;
+          margin-top: 5px;
+        }
       }
     }
   }
@@ -188,16 +217,14 @@
  background: #F1F2F7;
  padding: 20px 0px 50px;
  
- h1 {
-   color: #777;
-   font-size: 35px;
-   font-weight: 300;
-   text-align: left;
-   padding: 15px;
+ .row {
+   width: 90%;
+   margin: auto;
+   margin-bottom: 20px;
  }
  
  h2 {
-   color: #777777;
+   color: #444;
    font-size: 22px;
    font-weight: 300;
  }
@@ -208,7 +235,7 @@
    
    img {
      border-radius: 3px;
-     width: 90%;
+     width: 100%;
      margin: auto;
      display: block;
      margin-bottom: 15px;
@@ -216,8 +243,7 @@
    
    p {
      font-size: 1.2em;
-     width: 90%;
-     margin: auto;
+     color: #555;
    }
  }
 }
