@@ -7,6 +7,10 @@ RenoApp::Application.routes.draw do
   
   get '/' => 'static_pages#index'
   get 'compromiso' => 'static_pages#compromiso'
+  get 'instalaciones' => 'static_pages#instalaciones'
+  get 'clientes' => 'static_pages#clientes'
+  get 'productos' => 'static_pages#productos'
+  get 'contacto' => 'static_pages#contacto'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

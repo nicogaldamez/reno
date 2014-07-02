@@ -1,11 +1,25 @@
 class StaticPagesController < ApplicationController
   
   def index
-    @menu = 'inicio'
   end
   
-  def compromiso
-    
+  def compromiso    
+  end
+  
+  def instalaciones 
+       
+  end
+  
+  def clientes    
+    render 'en_construccion'
+  end
+  
+  def productos    
+    render 'en_construccion'    
+  end
+  
+  def contacto    
+    render 'en_construccion'    
   end
   
 end
