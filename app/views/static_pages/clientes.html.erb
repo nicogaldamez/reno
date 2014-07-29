@@ -1,0 +1,32 @@
+<% clientes = ['Aerosoles', 'Adhesivos','Alimentos','Calzado','Caucho','Cerámica','Ceras',
+               'Construcción','Cosméticos','Curtiembres','Celulosa','Cementeras','Detergentes',
+               'Deshidratadoras','Farmacéutica','Imprenta','Minería','Metalmecanica','Papel',
+               'Pesquera','Petroquímica','Pinturas','Plástico','Químicas','Refrigeración',
+               'Textil','Tintas']
+               %>
+
+<div id="clientes">
+  <h1> Clientes </h1>
+  <p class="text-center">
+    Reno S.A. abastece a una amplia gama de empresas de los más diversos sectores productivos, lo que avala nuestros excelentes productos y profesionalismo. Nuestros clientes son principalmente actores importantes en los siguientes rubros:
+  </p>
+  
+  <div class="contenido">
+    <div class="row">
+      <%
+      cant = 0
+      por_col = 7
+      clientes.each do |cliente|
+        if (cant % por_col) == 0%>
+          <%= "</ul> </div>".html_safe if cant != 0%>
+          <div class="col-xs-6 col-md-3"> <ul>
+        <% end %>
+        <%= "<li> #{cliente} </li>".html_safe %>
+        <% 
+        cant += 1
+      end %>    
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
