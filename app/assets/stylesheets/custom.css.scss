@@ -1,48 +1,5 @@
 @import "bootstrap";
 
-.prelogin {
-/*  background: #f8f8f8;*/
-}
-
-#banderas {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -300px;
-  margin-left: -400px;
-  width: 800px;
-  height: 540px;
-  text-align: center;
-  
-  .logo {
-    width: 500px;
-    padding: 40px;
-    background: white;
-    border-radius: 20px;
-  }
-  div.links {
-    width: 400px;
-    margin-top: 50px;
-    margin: auto;
-  }
-  .argentina { float: left;}
-  .chile { float: right;}
-  .bandera {
-    margin-top: 20px;
-    a { 
-      color: black; 
-      &:hover { text-decoration: none;};
-    }
-    img { width: 150px; }
-    p {
-      visibility: hidden;
-      text-align: center;
-    }
-    &:hover p {
-      visibility: visible;
-    }
-  }
-}
 
 body {
   margin: 0 auto;
