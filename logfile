@@ -44,3 +44,7 @@ HINT:  Is another postmaster (PID 2556) running in data directory "/usr/local/va
 LOG:  database system was shut down at 2014-07-24 12:41:35 ART
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

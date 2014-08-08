@@ -1,18 +1,20 @@
 class StaticPagesController < ApplicationController
   
+  def banderas
+    render layout: 'prelogin'    
+  end
+  
   def index
   end
   
   def compromiso    
-    # render 'en_construccion'
   end
   
   def instalaciones 
     
   end
   
-  def clientes  
-    render 'en_construccion'     
+  def clientes     
   end
   
   def productos    
