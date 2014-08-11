@@ -21,8 +21,7 @@ class StaticPagesController < ApplicationController
     render 'en_construccion'    
   end
   
-  def contacto    
-    render 'en_construccion'    
+  def contacto        
   end
   
 end

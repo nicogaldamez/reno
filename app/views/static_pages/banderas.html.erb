@@ -4,14 +4,14 @@
     
     <div class="links">
       <span class="bandera argentina">
-        <%= link_to inicio_path do %>
+        <%= link_to inicio_path(pais: 'arg') do %>
           <%= image_tag('Argentina.png') %>
           <p> Argentina </p>
         <% end %>
       </span>
     
       <span class="bandera chile">
-        <%= link_to inicio_path do %>
+        <%= link_to inicio_path(pais: 'chile') do %>
           <%= image_tag('Chile.png') %>
           <p> Chile </p>
         <% end %>

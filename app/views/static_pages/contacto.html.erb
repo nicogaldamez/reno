@@ -1,0 +1,67 @@
+<div id="contacto" >
+
+  <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" id="form-contacto">
+    <h3> Envíenos un correo </h3>
+    
+    <p>
+      Mediante este sencillo formulario de contacto, usted puede ponerse en contacto directamente con nosotros y plantearnos sus requerimientos de forma expedita.     
+    </p>
+    <%= form_tag 'product', id: 'newproduct_form', 
+          html: {role: :form, 'data-model' => 'product', autocomplete: 'off'} do |f| %>
+      <div id="error_explanation" class="errors">
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="">Nombre</label>
+          <%= text_field_tag :name, "", required: true, class: "form-control" %>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="">Correo</label>
+          <%= text_field_tag :name, "", type: 'email', required: true, class: "form-control" %>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="">Asunto</label>
+          <%= text_field_tag :url, "", required: true, class: "form-control" %>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-md-12">
+          <label for="">Cuerpo</label>
+          <%= text_area :description, "", required: true, 
+          class: "form-control", rows: 6 %>
+        </div>
+      </div>
+      
+    	<div class="submit">
+    		<%= submit_tag "Enviar", class: 'btn btn-success' %>			
+    	</div>
+    <% end %>
+  </div>
+
+  <div class="col-lg-4 col-md-4 col-xs-12 col-sm-6 datos-contacto">
+    <h3> Datos de contacto </h3>
+    
+     <ul class="contacto">
+        <li>
+           <i class="glyphicon glyphicon-globe"></i>
+           <p> 
+              <strong class="contact-pad">Dirección:</strong> Limache 3730, Viña del Mar 
+           </p>
+        </li>
+        <li>
+           <i class="glyphicon glyphicon-phone-alt"></i>
+           <p><strong>Teléfono:</strong> (56-32) 455200</p>
+        </li>
+        <li>
+           <i class="glyphicon glyphicon-envelope"></i>
+           <p><strong>Email:</strong> <a href="mailto:reno@reno.cl">reno@reno.cl</a></p>
+        </li>
+     </ul>
+  </div>
+  
+</div>
