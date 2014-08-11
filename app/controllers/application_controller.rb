@@ -7,5 +7,6 @@ class ApplicationController < ActionController::Base
   
   def set_pais
     @pais = params[:pais] || 'arg'
+    Rails.application.routes.default_url_options[:pais]= @pais 
   end
 end
