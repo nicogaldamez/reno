@@ -6,33 +6,39 @@
     <p>
       Mediante este sencillo formulario de contacto, usted puede ponerse en contacto directamente con nosotros y plantearnos sus requerimientos de forma expedita.     
     </p>
-    <%= form_tag 'product', id: 'newproduct_form', 
-          html: {role: :form, 'data-model' => 'product', autocomplete: 'off'} do |f| %>
-      <div id="error_explanation" class="errors">
-      </div>
+    <%= form_for @contacto do |f| %>
+      <% if @contacto.errors.any? %>
+        <div class="error_messages">
+          <ul>
+          <% @contacto.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
       
       <div class="row">
         <div class="form-group col-md-6">
           <label for="">Nombre</label>
-          <%= text_field_tag :name, "", required: true, class: "form-control" %>
+          <%= f.text_field :nombre, required: true, class: "form-control", autocomplete: 'off' %>
         </div>
         <div class="form-group col-md-6">
           <label for="">Correo</label>
-          <%= text_field_tag :name, "", type: 'email', required: true, class: "form-control" %>
+          <%= f.text_field :correo, type: 'email', required: true, class: "form-control", autocomplete: 'off' %>
         </div>
       </div>
       
       <div class="row">
         <div class="form-group col-md-12">
           <label for="">Asunto</label>
-          <%= text_field_tag :url, "", required: true, class: "form-control" %>
+          <%= f.text_field :asunto, required: true, class: "form-control", autocomplete: 'off' %>
         </div>
       </div>
       
       <div class="row">
         <div class="form-group col-md-12">
           <label for="">Cuerpo</label>
-          <%= text_area :description, "", required: true, 
+          <%= f.text_area :cuerpo, required: true, 
           class: "form-control", rows: 6 %>
         </div>
       </div>

@@ -5,8 +5,20 @@ body {
   margin: 0 auto;
 }
 
-#inicio {
-  background: url('https://farm8.staticflickr.com/7195/6946914191_fbcbbaada3_h.jpg') 0% 0 no-repeat fixed;
+#fixed_bg {
+/*  background:  0% 0 no-repeat fixed;*/
+  background:  top;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: 1600px 1063px;
 }
 
 .flecha {

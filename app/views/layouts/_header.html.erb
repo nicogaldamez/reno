@@ -1,20 +1,20 @@
 <header>
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
+      <div class="container-fluid row">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="col-lg-2 col-md-2 col-sm-2">
           <%= link_to image_tag("logo.png"), root_path, id: "logo", class:'navbar-brand' %>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="col-lg-9 col-lg-offset-1 col-sm-9 col-sm-offset-1">
+        <div class="col-lg-9 col-lg-offset-1 col-sm-10">
           <ul class="nav navbar-nav">
             <%= nav_link 'Inicio', inicio_path %>
             <%= nav_link 'Compromiso', compromiso_path %>
             <%= nav_link 'Instalaciones', instalaciones_path %>
             <%= nav_link 'Clientes', clientes_path %>
             <%= nav_link 'Productos', productos_path %>
-            <%= nav_link 'Contacto', contacto_path %>
+            <%= nav_link 'Contacto', new_contacto_path %>
           </ul>          
         </div>
       </div>

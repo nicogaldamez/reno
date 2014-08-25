@@ -30,6 +30,12 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap
 gem 'bootstrap-sass'
 
+gem 'active_attr'
+
+group :development do
+  gem "letter_opener"
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
