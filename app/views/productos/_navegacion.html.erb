@@ -1,0 +1,14 @@
+<aside class="col-md-3">
+  <ul class="nav nav-pills nav-stacked">
+    <%= @seleccionado %>
+    <li class="<%= 'active' if seleccionado == 0 %>"> 
+      <%= link_to "Alfabéticamente", productos_path %>
+    </li>
+    
+    <% @categorias.each do |categoria| %>
+      <li class="<%= 'active' if seleccionado == categoria.id %>"> 
+        <%= link_to categoria.nombre, "/productos/por_categoria/#{categoria.id}" %>
+      </li>
+    <% end %>
+  </ul>
+</aside>

@@ -1,0 +1,47 @@
+<div id="productos">
+  <div class="contenido container">
+    
+    <%= render partial: 'navegacion', locals: { seleccionado: 0 } %>
+    
+    <div class="col-md-9">
+      
+      <ul class="pagination pagination-sm">
+        <% iniciales = @productos.map {|p| p.nombre[0,1].upcase } %>
+        <% ('A'..'Z').each do |inicial| %>
+          <li>
+            <% if iniciales.include?(inicial) %>
+              <%= link_to(inicial, '#'+inicial) %>
+            <% else %>
+              <span> <%= inicial %> </span>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      
+      <div class="listado por_categoria col-md-5">
+        <ul>
+          <% primera_letra = '' %>
+          <% @productos.each do |producto| %>
+            <% 
+            inicial = producto.nombre[0,1].upcase
+            if inicial != primera_letra 
+              %>
+              <a name="<%= inicial %>"></a>
+              <li class="inicial"> 
+                <%= inicial %>
+              </li>
+              <% primera_letra = inicial %>
+            <% end %>  
+          
+            <li> <%= producto.nombre %> </li>
+            
+          <% end %>
+        </ul>
+      </div>
+      
+      
+    </div>
+  
+  </div>  
+      
+</div>

@@ -1,0 +1,20 @@
+<div id="productos">
+  <div class="contenido container">
+    
+    <%= render partial: 'navegacion', locals: { seleccionado: @categoria.id} %>
+    
+    <div class="listado por_categoria col-md-8">
+      <h1> <%= @categoria.nombre %> </h1>
+      <ul>
+        <% primera_letra = '' %>
+        <% @productos.each do |producto| %>
+        
+          <li> <%= producto.nombre %> </li>
+          
+        <% end %>
+      </ul>
+    </div>
+  
+  </div>  
+      
+</div>
